@@ -1,0 +1,19 @@
+{
+  "name": "the-gym-nodejs-crud",
+  "version": "0.0.1",
+  "description": "CRUD exercise, as part of the Nodejs curriculum at The-Gym",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angebhd/the-gym-nodejs-crud.git"
+  },
+  "author": "Ange Buhendwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angebhd/the-gym-nodejs-crud/issues"
+  },
+  "homepage": "https://github.com/angebhd/the-gym-nodejs-crud#readme"
+}
