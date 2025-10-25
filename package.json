@@ -2,9 +2,12 @@
   "name": "the-gym-nodejs-crud",
   "version": "0.0.1",
   "description": "CRUD exercise, as part of the Nodejs curriculum at The-Gym",
+  "type": "module",
   "main": "server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --exec ts-node-esm src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,15 @@
   },
   "homepage": "https://github.com/angebhd/the-gym-nodejs-crud#readme",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "mongoose": "^8.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.4",
+    "@types/node": "^24.9.1",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
