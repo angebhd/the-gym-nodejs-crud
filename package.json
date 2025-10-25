@@ -2,12 +2,11 @@
   "name": "the-gym-nodejs-crud",
   "version": "0.0.1",
   "description": "CRUD exercise, as part of the Nodejs curriculum at The-Gym",
-  "type": "module",
-  "main": "server.ts",
+  "main": "src/app.ts",
   "scripts": {
-    "dev": "nodemon --exec ts-node-esm src/app.ts",
+    "dev": "nodemon --exec ts-node src/app.ts",
     "build": "tsc",
-    "start": "node dist/app.js"
+    "start": "node --enable-source-maps dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +28,7 @@
     "@types/node": "^24.9.1",
     "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.9.3"
   }
 }
