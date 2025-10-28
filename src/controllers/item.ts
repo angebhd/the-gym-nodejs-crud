@@ -60,7 +60,7 @@ async function remove(req : Request, res: Response){
         if(!item){
             return res.status(404).json({message: "Item not found"});
         }
-        await item.remove();
+        await Item.deleteOne({_id: item._id});
         return res.status(204).json();
     }catch(err:any){
         return res.status(500).json({message: err.message});
