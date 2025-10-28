@@ -1,6 +1,8 @@
+require('dotenv').config();
+require('./config/db');
 const express = require('express');
 import type { Application, Request, Response } from 'express';
-const itemRoutes = require('./routes/index');
+const itemRoutes = require('./routes/item');
 
 const PORT = process.env.PORT || 3000;
 const app: Application = express();
